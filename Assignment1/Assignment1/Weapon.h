@@ -1,11 +1,10 @@
 #pragma once
+#include <string>
 class Weapon
 {
 public:
-	Weapon(char t);
+	Weapon();
 	~Weapon();
-
-	char weaponType;
-
 	void Shoot();
+	std::string shootText;
 };

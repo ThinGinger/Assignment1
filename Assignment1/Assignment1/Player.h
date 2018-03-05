@@ -1,17 +1,20 @@
 #pragma once
-#include "Weapon.h"
+#include "PrimaryWeapon.h"
+#include "SecondaryWeapon.h"
 class Player
 {
 public:
 	Player();
 	~Player();
 
-	Weapon weaponPrimary;
-	Weapon weaponSecondary;
+	PrimaryWeapon weaponPrimary;
+	SecondaryWeapon weaponSecondary;
 
-	void Equip(Weapon w);
-	void ShootPrimary(Weapon w);
-	void ShootSecondary(Weapon w);
+	void Equip(PrimaryWeapon w);
+	void Equip(SecondaryWeapon w);
+
+	void ShootPrimary();
+	void ShootSecondary();
 
 
 };

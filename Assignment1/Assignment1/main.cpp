@@ -1,16 +1,24 @@
 #include <iostream>
 #include "Player.h"
-#include "Weapon.h"
+#include "PrimaryWeapon.h"
+#include "SecondaryWeapon.h"
 
 int main()
 {
 	Player p;
 
-	Weapon w1('p');
-	Weapon w2('c'), w3('c');
+	PrimaryWeapon w1("Bang Bang");
+	SecondaryWeapon w2("Clap ur ass"), w3("DUGGA DUGGA");
 
 	p.Equip(w1);
 	p.Equip(w2);
+
+	p.ShootPrimary();
+	p.ShootSecondary();
+
+	p.Equip(w3);
+
+	p.ShootSecondary();
 
 
 	getchar();

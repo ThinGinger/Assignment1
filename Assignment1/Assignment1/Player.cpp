@@ -5,6 +5,7 @@
 
 Player::Player()
 {
+
 }
 
 
@@ -12,17 +13,22 @@ Player::~Player()
 {
 }
 
-void Player::Equip(Weapon w)
+void Player::Equip(PrimaryWeapon w)
 {
-
+	weaponPrimary = w;
 }
 
-void Player::ShootPrimary(Weapon w)
+void Player::Equip(SecondaryWeapon w)
+{
+	weaponSecondary = w;
+}
+
+void Player::ShootPrimary()
 {
 	weaponPrimary.Shoot();
 }
 
-void Player::ShootSecondary(Weapon w)
+void Player::ShootSecondary()
 {
 	weaponSecondary.Shoot();
 }

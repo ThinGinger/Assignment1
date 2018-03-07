@@ -16,11 +16,13 @@ Player::~Player()
 void Player::Equip(PrimaryWeapon w)
 {
 	weaponPrimary = w;
+	std::cout << "Primary Weapon Equipped";
 }
 
 void Player::Equip(SecondaryWeapon w)
 {
 	weaponSecondary = w;
+	std::cout << "Secondary Weapon Equipped";
 }
 
 void Player::ShootPrimary()

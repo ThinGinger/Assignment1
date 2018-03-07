@@ -7,8 +7,8 @@ int main()
 {
 	Player p;
 
-	PrimaryWeapon w1("Bang Bang");
-	SecondaryWeapon w2("Clap ur ass"), w3("DUGGA DUGGA");
+	PrimaryWeapon w1("Dugga Dugga");
+	SecondaryWeapon w2("Pew Pew"), w3("Bang Bang");
 
 	p.Equip(w1);
 	p.Equip(w2);
